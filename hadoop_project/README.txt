@@ -12,23 +12,6 @@ Hadoop 2.2.0
 Eclipse Kepler
 
 --------------------------------------------------------------------------------
-Tested on the following environment:
---------------------------------------------------------------------------------
-OS X 10.8.5
-Java 1.6.0_65 (http://support.apple.com/kb/DL1573)
-Hadoop 2.2.0
-
-Setup using the following guide:
-hadoop_install_with_eclipse_plugin_and_code_changes.docx
-https://piazza.com/class_profile/get_resource/hog616iewln1p/hsf9hbalzal3f9
-
-Hadoop installation directory:
-/Applications/hadoop-2.2.0
-
-On Mac OS X you may want to run the following command if the jar isn't working:
-sudo ln -s /usr/bin/java /bin/java
-
---------------------------------------------------------------------------------
 (Optional) Edit the source code to reflect for your own environment:
 --------------------------------------------------------------------------------
 You can change the default input path changing the DEFAULT_INPUT variable in
@@ -80,19 +63,17 @@ To run the project directly from Eclipse:
 --------------------------------------------------------------------------------
 1. Set up the hadoop plugin for eclipse:
    https://github.com/winghc/hadoop2x-eclipse-plugin
-2. You may use the above mentioned guide for configurations:
-   https://piazza.com/class_profile/get_resource/hog616iewln1p/hsf9hbalzal3f9
-3. Set up the optional step above by setting lines 63 and 64 for 'Common.java'
-4. Set the following VM arguments in Eclipse: -Xms512M -Xmx1524M
+2. Set up the optional step above by setting lines 63 and 64 for 'Common.java'
+3. Set the following VM arguments in Eclipse: -Xms512M -Xmx1524M
    They need to be set in the project's Run Configurations -> Arguments
-5. To run everything run: 'src/driver/All.java'
-6. For wordcount run: 'src/driver/WordCount.java'
-7. For co-occurrence run: 'src/driver/CoOccurrence.java'
-8. For pairs only run: 'src/driver/Pairs.java'
-9. For stripes only run: 'src/driver/Stripes.java'
-10. For k-means with addition outputs run: 'src/driver/Kmeans.java'
-11. For k-means only run: 'src/driver/KmeansOnly.java'
-12. For shortest path run: 'src/driver/ShortestPath.java'
+4. To run everything run: 'src/driver/All.java'
+5. For wordcount run: 'src/driver/WordCount.java'
+6. For co-occurrence run: 'src/driver/CoOccurrence.java'
+7. For pairs only run: 'src/driver/Pairs.java'
+8. For stripes only run: 'src/driver/Stripes.java'
+9. For k-means with addition outputs run: 'src/driver/Kmeans.java'
+10. For k-means only run: 'src/driver/KmeansOnly.java'
+11. For shortest path run: 'src/driver/ShortestPath.java'
 
 --------------------------------------------------------------------------------
 To run the project using a jar file:
